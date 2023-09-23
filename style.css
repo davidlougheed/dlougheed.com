@@ -24,7 +24,7 @@ header {
 	gap: 2.5rem;
 }
 
-div#content header p {
+header p {
 	margin: 0;
 	font-size: 1.45rem;
 	line-height: 1.9rem;
@@ -59,7 +59,7 @@ ul#nav li.after-line::after {
 	background-color: #dfdfdf;
 }
 
-div#content {
+main {
 	max-width: 48rem;
 	margin: 3.5rem auto;
 	padding: 0 3.5rem;
@@ -67,7 +67,7 @@ div#content {
 	color: #333;
 }
 
-div#content h1 {
+h1 {
 	color: #666;
 	font-weight: normal;
 	margin: 0;
@@ -84,19 +84,19 @@ div#content h1 {
 	font-family: sans-serif;
 }*/
 
-div#content h2 {
+h2 {
 	margin: 1.8rem 0 1rem 0;
 	font-family: "Garamond", serif;
 	font-size: 1.2rem;
 	color: #444;
 }
 
-div#content p {
+p {
 	line-height: 1.3em;
 	font-size: 1.2rem;
 	font-family: "Garamond", serif;
 }
-div#content p span {
+p span {
 	/*color: #ff494d;*/
 	color: #f63752;
 }
@@ -112,13 +112,16 @@ ul li {
 }
 ul.projects li p {
 	margin: 0.2rem 0 0 0;
-	font-size: 1rem;
+	font-size: 1.1rem;
 	color: #666;
 	font-style: italic;
 }
+ul.projects li p strong {
+	white-space: nowrap;  /* ensure name in pub authors stays on one line */
+}
 
 @media screen and (max-width: 820px) {
-	div#content {
+	main {
 		margin: 2rem auto;
 		padding: 0 2rem;
 	}
