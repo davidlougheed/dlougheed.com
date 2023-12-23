@@ -6,9 +6,12 @@ body {
 }
 
 a {
-	/*color: #4848e4;*/
-	color: #ee5850;
 	/*color: #6cbe7a;*/
+	/*color: #4848e4;*/
+	/*color: #ee5850;*/
+	/*color: #278fd7;*/
+	/*color: #6c6eda;*/
+	color: #d65038;
 	text-decoration: none;
 }
 a:hover {
