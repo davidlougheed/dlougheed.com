@@ -24,13 +24,14 @@ a:active {
 header {
 	display: flex;
 	align-items: baseline;
-	gap: 2.5rem;
 }
 
-header p {
+header h1 {
 	margin: 0;
 	font-size: 1.45rem;
 	line-height: 1.9rem;
+	font-weight: normal;
+	flex: 1;
 }
 
 ul#nav {
@@ -63,29 +64,12 @@ ul#nav li.after-line::after {
 }
 
 main {
-	max-width: 48rem;
+	max-width: 54rem;
 	margin: 3.5rem auto;
 	padding: 0 3.5rem;
 
 	color: #333;
 }
-
-h1 {
-	color: #666;
-	font-weight: normal;
-	margin: 0;
-
-	font-size: 1.8rem;
-	font-family: sans-serif;
-}
-/*div#content h2 {
-	color: #ff494d;
-	color: #4848e4;
-	margin-top: 0;
-	font-size: 1.6rem;
-	font-weight: normal;
-	font-family: sans-serif;
-}*/
 
 h2 {
 	margin: 1.8rem 0 1rem 0;
@@ -117,6 +101,17 @@ ul.projects li p {
 	margin: 0.2rem 0 0 0;
 	font-size: 1.1rem;
 	color: #666;
+	/*font-style: italic;*/
+}
+ul.projects li p a.subtle-link {
+	color: #666;
+	text-decoration: underline;
+}
+ul.projects li p a.subtle-link:active {
+	color: #333;
+	text-decoration: underline;
+}
+ul.projects li p em {
 	font-style: italic;
 }
 ul.projects li p strong {
