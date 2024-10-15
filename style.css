@@ -97,6 +97,10 @@ ul li {
 	margin: 1.3rem 0;
 	list-style: none;
 }
+ul.projects li.with-logo {
+	display: flex;
+	gap: 8px;
+}
 ul.projects li p {
 	margin: 0.2rem 0 0 0;
 	font-size: 1.1rem;
@@ -116,6 +120,11 @@ ul.projects li p em {
 }
 ul.projects li p strong {
 	white-space: nowrap;  /* ensure name in pub authors stays on one line */
+}
+ul.projects li.with-logo img {
+	float: right;
+	height: 70px;
+	width: auto;
 }
 
 @media screen and (max-width: 820px) {
