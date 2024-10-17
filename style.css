@@ -140,6 +140,10 @@ ul.projects li.with-logo img {
 }
 
 @media screen and (max-width: 640px) {
+	#pfp {
+		display: none;
+	}
+
 	ul#nav {
 		flex-direction: column;
 	}
