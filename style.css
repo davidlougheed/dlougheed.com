@@ -11,7 +11,9 @@ a {
 	/*color: #ee5850;*/
 	/*color: #278fd7;*/
 	/*color: #6c6eda;*/
-	color: #d65038;
+	/*color: #d65038;*/
+	/*color: #3a9e90;*/
+	color: #3f79c0;
 	text-decoration: none;
 }
 a:hover {
@@ -24,6 +26,7 @@ a:active {
 header {
 	display: flex;
 	align-items: baseline;
+	margin-bottom: 2rem;
 }
 
 header h1 {
@@ -64,8 +67,9 @@ ul#nav li.after-line::after {
 }
 
 main {
-	max-width: 54rem;
-	margin: 3.5rem auto;
+	max-width: 52rem;
+	/*margin: 3.5rem auto;*/
+	margin: 2.7rem auto 1.5rem auto;
 	padding: 0 3.5rem;
 
 	color: #333;
@@ -78,10 +82,26 @@ h2 {
 	color: #444;
 }
 
+h2 a {
+	float: right;
+	font-style: italic;
+	font-weight: normal;
+}
+
+h3 {
+	color: #555;
+	font-style: italic;
+	font-size: 1.1rem;
+}
+
+p, li {
+	font-family: "Garamond", serif;
+	font-size: 1.2rem;
+	/*font-size: 1.1rem;*/
+}
+
 p {
 	line-height: 1.3em;
-	font-size: 1.2rem;
-	font-family: "Garamond", serif;
 }
 p span {
 	/*color: #ff494d;*/
@@ -91,40 +111,55 @@ p span {
 ul {
 	padding: 0;
 }
-ul li {
-	font-family: "Garamond", serif;
-	font-size: 1.2rem;
+li {
 	margin: 1.3rem 0;
+	/*list-style: none;*/
+}
+ul li {
 	list-style: none;
 }
-ul.projects li.with-logo {
+.projects li.with-logo {
 	display: flex;
 	gap: 8px;
 }
-ul.projects li p {
+.projects li p {
 	margin: 0.2rem 0 0 0;
 	font-size: 1.1rem;
 	color: #666;
 	/*font-style: italic;*/
 }
-ul.projects li p a.subtle-link {
+.projects li p a.subtle-link {
 	color: #666;
 	text-decoration: underline;
 }
-ul.projects li p a.subtle-link:active {
+.projects li p a.subtle-link:active {
 	color: #333;
 	text-decoration: underline;
 }
-ul.projects li p em {
+.projects li p em {
 	font-style: italic;
 }
-ul.projects li p strong {
+.projects li p strong {
 	white-space: nowrap;  /* ensure name in pub authors stays on one line */
 }
-ul.projects li.with-logo img {
+.projects li.with-logo img {
 	float: right;
 	height: 70px;
 	width: auto;
+}
+
+figure {
+	margin: 0;
+}
+figure#main-photo img {
+	max-width: 100%;
+	/*margin-top: 1rem;*/
+	margin-top: 0.5rem;
+}
+figcaption {
+	color: #666;
+	font-style: italic;
+	font-size: 12px;
 }
 
 @media screen and (max-width: 820px) {
