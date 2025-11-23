@@ -23,6 +23,12 @@ a:active {
 	color: #4848e4;
 }
 
+hr {
+    border: none;
+    border-bottom: 1px solid #E3E3E3;
+    margin: 1.5rem 0;
+}
+
 header {
 	display: flex;
 	align-items: baseline;
