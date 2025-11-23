@@ -1,0 +1,102 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<title>David Lougheed | Research</title>
+
+	<link rel="stylesheet" href="style.css">
+	<link rel="shortcut icon" href="favicon.png">
+
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<meta charset="utf-8">
+</head>
+<body>
+<main>
+	<header>
+		<h1 id="leading">David Lougheed</h1>
+		<ul id="nav">
+			<li><a href="index.html">Home</a></li>
+			<li>Research</li>
+			<li><a href="publications.html">Publications</a></li>
+			<li><a href="projects.html">Software &amp; Projects</a></li>
+			<!-- <li><a href="photos.html">Photos</a></li> -->
+		</ul>
+	</header>
+	<h2 id="research">Research</h2>
+	<h3>Graduate Research</h3>
+	<ul class="projects">
+		<li class="with-logo large-logo">
+			<div>
+				<span>
+					Genotyping short tandem repeats using long reads
+					(<a href="https://www.biorxiv.org/content/10.1101/2025.03.25.645269v1.full.pdf+html">Lougheed
+						<em>et al.</em> 2025 preprint</a>)
+				</span>
+				<p>
+					Short tandem repeats (STRs) are repetitive regions, composed of a small "motif"
+					(e.g., <code>CAG</code>) repeated several times in a row (<code>CAGCAGCAGCAG&hellip;</code>)
+					which make up about 5% of the human genome and are implicated in gene expression and disease in
+					humans. Due to their repetitiveness, they can be difficult to genotype with traditional short-read
+					sequencing. As part of my Master's project in
+					<a href="https://computationalgenomics.ca/BourqueLab/" class="subtle-link">
+						Prof. Guillaume Bourque</a>'s lab,
+					I wrote a tool called <a href="projects.html#strkit" class="subtle-link">STRkit</a> to genotype
+					these regions using long-read sequencing data, which at the time of writing achieves
+					state-of-the-art performance in key benchmarking metrics.
+				</p>
+			</div>
+			<img alt="" src="img/strkit.png" />
+		</li>
+	</ul>
+	<h3>Side Projects</h3>
+	<ul class="projects">
+		<li class="with-logo">
+			<div>
+				<span>Population structure in rockhole frogs <em>(ongoing)</em></span>
+				<p>
+					The Australian rockhole frog (<em>Litoria meiriana</em>) is a species of very small frog endemic to
+					a small portion of northern Australia. Work on this project, primarily occurring at the
+					<a href="https://sclougheed.ca" class="subtle-link">Lougheed Lab</a> at Queen's University, is
+					examining the fine-grained population genetic structure occurring in this species and testing
+					whether hydrology is implicated.
+				</p>
+			</div>
+		</li>
+		<li class="with-logo">
+			<div>
+				<span>
+					Detecting parental inheritance of human telomere alleles
+					(<a href="https://www.biorxiv.org/content/10.1101/2025.10.07.680721v1">Zhou <em>et al.</em> 2025
+						preprint</a>)
+				</span>
+				<p>
+					<a href="https://computationalgenomics.ca/BourqueLab/" class="subtle-link">Bourque Lab</a> PhD
+					student Yuxin Zhou's research focuses on telomeric inheritance in humans. Telomeres in humans are
+					composed of primarily hexamer repeat units (the canonical repeat unit being <code>TTAGGG</code>).
+					Telomere variable regions ("TVRs") contain variant repeat units, which form a "barcode" that can be
+					used to trace parent-child telomere inheritance. For this project, I helped construct an algorithm,
+					<a href="https://github.com/davidlougheed/teloscore" class="subtle-link">TeloScore</a>, for scoring
+					similarities between TVR alleles.
+				</p>
+			</div>
+		</li>
+		<li class="with-logo">
+			<div>
+				<span>A reference genome for the western chorus frog</span>
+				(<a href="https://www.biorxiv.org/content/10.1101/2024.10.27.620512v1.full.pdf+html">Chen
+					<em>et al.</em> 2024 preprint</a>)
+				<p>
+					I helped <a href="https://yingchen94.github.io/" class="subtle-link">Ying Chen</a> (at the time a
+					PhD student at Queen's University, now a Bioinformatics Specialist in the
+					<a href="https://www.vertebrategenomelab.org/home" class="subtle-link">Vertebrate Genome Lab</a> at
+					Rockefeller University) assemble the first reference genome for the
+					<a href="https://en.wikipedia.org/wiki/Western_chorus_frog" class="subtle-link">
+						western chorus frog</a> (<em>Pseudacris triseriata</em>). In addition to providing a new
+					reference genome for future research, this work uncovered the sex determination system in this frog
+					and identified genes that may be important in anuran evolution.
+				</p>
+			</div>
+		</li>
+	</ul>
+</main>
+</body>
+</html>

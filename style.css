@@ -142,10 +142,17 @@ ul li {
 .projects li p strong {
 	white-space: nowrap;  /* ensure name in pub authors stays on one line */
 }
+.projects li p code {
+    font-size: 0.9em;
+}
 .projects li.with-logo img {
 	float: right;
 	height: 70px;
 	width: auto;
+}
+.projects li.with-logo.large-logo img {
+    height: 120px;
+    margin-top: 1em;
 }
 
 figure {
@@ -173,6 +180,11 @@ figcaption {
 		flex-direction: column;
 		gap: 0.5rem;
 	}
+
+    .projects li.with-logo.large-logo img {
+        height: 70px;
+        margin-top: 0;
+    }
 }
 
 @media screen and (max-width: 640px) {
@@ -196,4 +208,8 @@ figcaption {
 		border-radius: 1px;
 		background-color: #efefef;
 	}
+
+    .projects li.with-logo.large-logo img {
+        display: none;
+    }
 }
