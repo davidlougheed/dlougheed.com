@@ -74,11 +74,13 @@ ul#nav li.after-line::after {
 
 main {
 	max-width: 52rem;
-	/*margin: 3.5rem auto;*/
-	margin: 2.7rem auto 1.5rem auto;
+	margin: 2.7rem auto 3.5rem auto;
 	padding: 0 3.5rem;
 
 	color: #333;
+}
+main#homepage {
+    margin: 2.7rem auto 1.5rem auto;
 }
 
 h2 {
@@ -162,11 +164,20 @@ ul li {
 }
 
 figure {
-	margin: 0;
+    margin: 1rem 0;
+}
+figure img {
+    max-width: 100%;
+    height: auto;
+}
+figure.portrait img {
+    min-height: 400px;
+    height: auto;
+    max-height: 65vh;
+    width: auto;
+    max-width: 100%;
 }
 figure#main-photo img {
-	max-width: 100%;
-	height: auto;
 	/*margin-top: 1rem;*/
 	margin-top: 0.5rem;
 }
